@@ -7,11 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChronometreComponent implements OnInit {
 
-  valeur = 0;
+  dateTime = new Date().toLocaleTimeString();
+  dateDay = new Date();
 
   constructor() { }
 
   ngOnInit(): void {
+    this.refresh();
+  }
+
+  refresh() {
+    //refresh the date every second
+    setInterval(() => {
+      this.dateTime = new Date().toLocaleTimeString();
+      this.dateDay = new Date();
+    }
+    , 1000);
+
   }
 
 }
