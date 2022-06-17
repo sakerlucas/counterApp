@@ -1,0 +1,35 @@
+<div class="container">
+  <p class="display-6 mt-5 text-center">{{ valeur }}</p>
+
+  <div class="row">
+    <div class="col-lg-4 mt-1">
+      <button
+        class="btn btn-dark col-lg-12 col-12"
+        type="button"
+        (click)="reset()"
+      >
+        Reset Counter
+      </button>
+    </div>
+
+    <div class="col-lg-4 mt-1">
+      <button
+        class="btn btn-success col-lg-12 col-12"
+        type="button"
+        (click)="increment()"
+      >
+        Increment Value
+      </button>
+    </div>
+
+    <div class="col-lg-4 mt-1">
+      <button
+        class="btn btn-danger col-lg-12 col-12"
+        type="button"
+        (click)="decrement()"
+      >
+        Decrement Value
+      </button>
+    </div>
+  </div>
+</div>
